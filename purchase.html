@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width" />
+        <link rel="stylesheet" href="css/purchase.css" />
+        <title>purchase</title>
+    </head>
+    <body>
+        <div class="form-wrapper">
+            <form action="purchase_submit" method="get" accept-charset="utf-8">
+                <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    autocomplete="off"
+                    placeholder="имя"
+                />
+                <label for="name" class="label"></label>
+                <input type="text" id="surname" placeholder="фамилия" />
+                <label for="surname "></label>
+
+                <input type="text" id="partonymic" placeholder="отчество" />
+                <label for="patronymic"></label>
+
+                <input type="text" id="email" placeholder="email" />
+                <label for="email"></label>
+
+                <input type="text" id="phone" placeholder="телефон" />
+
+                <label for="payment">способ оплаты</label>
+                <select name="payment" class="form__select">
+                    <option value="cash">наличными</option>
+                    <option value="card">картой</option>
+                </select>
+                <br />
+
+                <label for="delivery">способ доставки</label>
+                <select name="delivery" class="form__select">
+                    <option value="itself">самовывоз</option>
+                    <option value="delivery">доставка</option>
+                </select>
+
+                <button id="submit">
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+                        >подтвердить</a
+                    >
+                </button>
+            </form>
+        </div>
+
+        <script src="js/purchase.js"></script>
+    </body>
+</html>

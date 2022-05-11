@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<items>
+    <card>
+        <img>images/hoodie.png</img>
+        <name>толстовка "metal pumpkin"</name>
+        <cost>120руб</cost>
+    </card>
+
+<card>
+        <img>images/tshirt.png</img>
+        <name>футболка "metal pumpkin" </name>
+        <cost>120руб</cost>
+</card>
+
+<card>
+        <img>images/tshirtcool.png</img>
+        <name> футболка"metal pumpkin" </name>
+        <cost>120руб</cost>
+    </card>
+<card>
+        <img>images/vinyl.png</img>
+        <name>винил "metal pumpkin" </name>
+        <cost>120руб</cost>
+    </card>
+
+<card>
+    <img>images/sodom.jpg</img>
+    <name> нашивка "sodom"</name>
+    <cost>120руб</cost>
+    </card>
+
+    <card>
+        <img>images/immortal.jpg</img>
+        <name>бейсболка "immortal"</name>
+    <cost>120руб</cost>
+    </card>
+<card>
+    <img>images/symbolic.jpg</img>
+    <name>нашивка "symbolic"</name>
+    <cost>120руб</cost>
+    <sale></sale>
+    </card>
+<card>
+    <img>images/metallica-stripe.jpg</img>
+    <name> нашивка "metallica"</name>
+    <cost>120руб</cost>
+    <sale></sale>
+    </card>
+</items>

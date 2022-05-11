@@ -1,0 +1,48 @@
+@import 'header&footer.scss';
+
+.info-body{
+    margin-top:5vh;
+    margin-left: $mrgleft;
+    display:flex;
+    column-gap:3vw;
+
+    &__form {
+        max-width: 530px;
+        background-color: #fff;
+        border-radius: 5px;
+
+        padding:30px;
+        .input{
+            position: relative;
+        }    
+
+        input {
+            width:100%;
+            height: 42px;
+            outline:none;
+            border:none;
+            margin: 20px 0; 
+            border-bottom:1px solid black;
+        }
+        textarea{
+            border:none;
+            margin-top:20px ;
+            width:500px ;
+        }
+        .input__label{
+            position: absolute;
+            left: 0;
+            border-bottom: 2px solid black;
+            background-color: #fff;
+        }
+    }
+    &__contacts{
+
+    }
+
+
+    h1,h3,input,textarea,span,a,label{
+        color:black;
+    }
+}
+

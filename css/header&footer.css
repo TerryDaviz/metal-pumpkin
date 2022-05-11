@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: #fff;
+}
+
+body {
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  line-height: 1.4;
+  background-color: #d4d4d4;
+  min-width: 320px;
+  overflow-x: hidden;
+  height: auto;
+  height: 100vh;
+}
+
+.menu {
+  margin-top: 10px;
+}
+.menu .menu__navbar {
+  z-index: -1;
+}
+
+.navbar {
+  background: #2c2b2b;
+}
+.navbar .container {
+  height: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+ul, li {
+  display: inline;
+}
+
+.navbar-wrap {
+  margin-left: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.navbar-wrap .menu {
+  margin: 0;
+  padding: 0;
+}
+.navbar-wrap .menu .menu__link {
+  font-size: 20px;
+  padding: 20px;
+  opacity: 0.9;
+}
+.navbar-wrap .menu .menu__phone {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 20px;
+  margin-left: 10px;
+  opacity: 0.9;
+}
+
+.navbar__logo {
+  max-width: 103px;
+  margin-left: 170px;
+}
+
+footer {
+  height: 118.8px;
+  background-color: #2c2b2b !important;
+  background: url("/images/logo.png") center no-repeat, url("/images/location.png") left no-repeat;
+  background-size: 30% 130%, 3% 10%;
+}

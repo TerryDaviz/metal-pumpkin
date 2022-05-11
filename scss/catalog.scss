@@ -1,0 +1,120 @@
+@import 'header&footer.scss';
+
+.hide {
+    display: none;
+}
+.shop-body {
+    margin: 0 0 10vw  $mrgleft;
+.search-form {
+    margin: 30px 70% 70px 0;
+    position: relative;
+    input {
+        height: 100%;
+        width: 100%;
+        border:none;
+        background-color: #d4d4d4;
+        color: black;
+        outline:none;
+}
+    .search-form__label{
+         position: absolute;
+         bottom: 0px;
+         left: 0%;
+         width: 19vw;
+         height: 100%;
+         pointer-events:none;
+         border-bottom:2px solid black;
+
+        background: url('/images/search.png') right no-repeat;
+
+        background-size: contain;
+         &:after{
+             content: "";
+             position: absolute;
+             width: 100%;
+             height: 100%;
+         }  
+            .search-form__content {
+                position: absolute;
+                bottom:5px;
+                left:0px;
+                font-weight:400;
+                color:black;
+                transition: all 0.3s ease;
+        }
+
+    }
+}
+
+.search-form input:focus  + .search-form__label .search-form__content, 
+.search-from input:valid + .search-form__label .search-form__content{
+    transform: translateY(-100%);
+    font-size: 14px;
+    color:grey;
+}
+
+.items {
+    display: flex;
+    align-items:center;
+    flex-wrap:wrap;
+    column-gap:32px * $hratio;
+    row-gap:64px * $vratio;
+    .card{
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        row-gap:5px;
+        &:hover{
+            background-color: #d4d4e4;
+            transform: translateY(-15px);
+            transform: scale(105%);
+            transition: all ease-out .3s;
+            
+        }
+        .card__product{
+            max-width: 248px;
+            height:250px;
+            border-radius:10px;
+        }
+        .card__caption{
+            color:black;
+            font-weight:500;
+        }
+        .card__button{
+            font-size:20px;
+            border-radius:10px;
+            background-color:#E84646;
+            padding:8px 50px 8px 50px;
+            margin-left: auto;
+            margin-right: auto;
+            &:hover {
+                background-color: #940000;
+                transform: scale(103%);
+                transition:all ease .3s;
+            }
+
+        }
+       }
+    }
+
+    h1{
+        
+        margin: 0 0 5vw 0;
+        font-weight: 400;
+        color: black;
+    }
+
+    .card{
+        list-style: none;
+        .card__price{
+            color:#970000;
+            font-weight:500;
+            font-size: 20px;
+        }
+    }
+  
+
+    p {
+        text-align:center;
+    }
+    }

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <link
+            rel="stylesheet"
+            href="css/cart.css"
+            type="text/css"
+            media="screen"
+            charset="utf-8"
+        />
+        <title>cart</title>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <div class="container">
+                    <img class="navbar__logo" src="images/logo.png" alt="" />
+
+                    <a class="navbar__toggle-button" href="#">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </a>
+                </div>
+                <div class="navbar-wrap">
+                    <ul class="menu">
+                        <li>
+                            <a class="menu__link" href="index.html">Главная</a>
+                        </li>
+                        <li>
+                            <a class="menu__link" href="catalog.html"
+                                >Каталог</a
+                            >
+                        </li>
+
+                        <li></li>
+                        <li>
+                            <a class="menu__link" href="news.html">Новости</a>
+                        </li>
+                        <li>
+                            <a class="menu__link" href="contact-info.html"
+                                >Контакты</a
+                            >
+                        </li>
+
+                        <img
+                            class="menu__phone_image"
+                            src="images/telephone-white.png"
+                            alt=""
+                        />
+                        <a href="" class="menu__phone">+375 (44) 4-979-228</a>
+                        <li class="menu__counter">
+                            <p id="counter">0.00</p>
+                            <small>руб</small>
+                            <a href="cart.html">
+                                <img
+                                    src="images/shopping-cart-white.png"
+                                    class="menu__shopping-card"
+                                />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <div class="cart-body">
+            <div class="items"></div>
+        </div>
+        <script src="js/cart.js"></script>
+    </body>
+</html>

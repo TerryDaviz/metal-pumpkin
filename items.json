@@ -1,0 +1,48 @@
+{
+    "1337": {
+        "name": "футболка \"Meshuggah\" ",
+        "cost": 120,
+        "image": "images/10011.jpg"
+    },
+    "1338": {
+        "name": "футболка \"Metal pumpkin\" ",
+        "cost": 120,
+        "image": "images/tshirt.png"
+    },
+    "1339": {
+        "name": "футболка \"Burzum filosofem\" ",
+        "cost": 120,
+        "image": "images/filosofem.jpg"
+    },
+
+    "1340": {
+        "name": "футболка \"The way of all flesh\" ",
+        "cost": 120,
+        "image": "images/gojira.jpg"
+    },
+    "1341": {
+        "name": "толстовка \"Pantera\" ",
+        "amount": 1,
+        "cost": 120,
+        "image": "images/rantera.jpg"
+    },
+    "1342": {
+        "name": "толстовка \"Metal pumpkin\" ",
+        "amount": 1,
+        "cost": 120,
+        "image": "images/hoodie.png"
+    },
+    "1343": {
+        "name": "толстовка \"Megadeth\" ",
+        "amount": 1,
+        "cost": 120,
+        "image": "images/megadeth.jpg"
+    },
+
+    "1344": {
+        "name": "толстовка \"Metallica\" ",
+        "amount": 1,
+        "cost": 120,
+        "image": "images/metallica.jpg"
+    }
+}
