@@ -10,15 +10,19 @@
             media="screen"
             charset="utf-8"
         />
-        <title>cart</title>
+        <title>contact-info</title>
     </head>
     <body>
         <header>
             <nav class="navbar">
                 <div class="container">
-                    <img class="navbar__logo" src="images/logo.png" alt="" />
-                    <a class="navbar__toggle-button" href="#"
-                        ><span class="bar"></span>
+                    <img
+                        class="navbar__logo"
+                        src="images/logo.png"
+                        alt="unable to load image"
+                    />
+                    <a class="navbar__toggle-button" href="#">
+                        <span class="bar"></span>
                         <span class="bar"></span>
                         <span class="bar"></span
                     ></a>
@@ -33,8 +37,6 @@
                                 >Каталог</a
                             >
                         </li>
-
-                        <li></li>
                         <li>
                             <a class="menu__link" href="news.html">Новости</a>
                         </li>
@@ -47,7 +49,7 @@
                         <img
                             class="menu__phone_image"
                             src="images/telephone-white.png"
-                            alt=""
+                            alt="unable to load image"
                         />
                         <a href="" class="menu__phone">+375 (44) 4-979-228</a>
                         <li class="menu__counter">
@@ -60,24 +62,38 @@
                                 />
                             </a>
                         </li>
+                        <li class="menu__counter-mobile">
+                            <a href="cart.html"> Корзина </a>
+                        </li>
                     </ul>
                 </div>
             </nav>
         </header>
+
         <div class="info-body">
             <div class="info-body__form">
                 <form action="" class="form">
                     <h3>Форма обратной связи</h3>
                     <div class="input">
                         <input type="text" name="name" placeholder="Ваше имя" />
-                        <label class="input__label" for=""></label>
+                        <label class="input__label" for="name"></label>
                     </div>
                     <div class="input">
-                        <input type="text" name="email" placeholder="Ваш email"/>
-                        <label class="input__label" for=""></label>
+                        <input
+                            type="text"
+                            name="email"
+                            placeholder="Ваш email"
+                        />
+                        <label class="input__label" for="email"></label>
                     </div>
                     <div class="textarea">
-                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Ваше сообщение"></textarea>
+                        <textarea
+                            name="message"
+                            id="message"
+                            cols="30"
+                            rows="10"
+                            placeholder="Ваше сообщение"
+                        ></textarea>
                         <label class="textarea__label" for="messsage"></label>
                     </div>
                 </form>
@@ -85,14 +101,33 @@
             <div class="info-body__contacts">
                 <h1>Контактная информация</h1>
                 <div class="contact">
-                    <span>email:</span><a href="#">metalpumpkin@gmail.com</a>
-                <div class="contact">
-                    <span>телефон:</span><a href="#">+375 (44) 4-979-228</a>
-                </div>
-                <div class="contact">
-                <span>Адрес:</span><a href="#">г.Минск, ул.Пушкина, д.Колотушкина</a>
+                    <span>email: </span><a href="#metalpumpkin@gmail.com"></a>
+                    <div class="contact">
+                        <span>телефон: </span
+                        ><a href="#">+375 (44) 4-979-228</a>
+                    </div>
+                    <div class="contact">
+                        <span>Адрес: </span
+                        ><a href="#">г.Минск, ул.Пушкина, д.Колотушкина</a>
+                    </div>
                 </div>
             </div>
         </div>
+
+        <footer>
+            <div class="footer-info">
+                <img class="footer__image" src="images/location.png" alt="" />
+                <span class="footer__content">ул.Пушкина, дом Колотушкина</span>
+            </div>
+            <img class="footer__logo" src="images/logo.png" alt="" />
+            <div class="footer-info_right">
+                <img class="footer__image" src="images/email.png" alt="" />
+                <span> metalpumpkin@gmail.com</span>
+            </div>
+            <div class="footer-info_bottom">
+                <span>на доставку денег не хватило...</span>
+            </div>
+        </footer>
+        <script src="js/toggle-button.js"></script>
     </body>
 </html>

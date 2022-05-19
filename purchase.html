@@ -28,18 +28,19 @@
 
                 <input type="text" id="phone" placeholder="телефон" />
 
-                <label for="payment">способ оплаты</label>
-                <select name="payment" class="form__select">
-                    <option value="cash">наличными</option>
-                    <option value="card">картой</option>
-                </select>
-                <br />
-
-                <label for="delivery">способ доставки</label>
-                <select name="delivery" class="form__select">
-                    <option value="itself">самовывоз</option>
-                    <option value="delivery">доставка</option>
-                </select>
+                <div class="select-wrapper">
+                    <label for="payment">способ оплаты</label>
+                    <select name="payment" class="form__select">
+                        <option value="cash">наличными</option>
+                        <option value="card">картой</option>
+                    </select>
+                    <br />
+                    <label for="delivery">способ доставки</label>
+                    <select name="delivery" class="form__select">
+                        <option value="itself">самовывоз</option>
+                        <option value="delivery">доставка</option>
+                    </select>
+                </div>
 
                 <button id="submit">
                     <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
@@ -48,7 +49,6 @@
                 </button>
             </form>
         </div>
-
         <script src="js/purchase.js"></script>
     </body>
 </html>

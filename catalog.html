@@ -17,9 +17,13 @@
         <header>
             <nav class="navbar">
                 <div class="container">
-                    <img class="navbar__logo" src="images/logo.png" alt="" />
-                    <a class="navbar__toggle-button" href="#"
-                        ><span class="bar"></span>
+                    <img
+                        class="navbar__logo"
+                        src="images/logo.png"
+                        alt="unable to load image"
+                    />
+                    <a class="navbar__toggle-button" href="#">
+                        <span class="bar"></span>
                         <span class="bar"></span>
                         <span class="bar"></span
                     ></a>
@@ -34,15 +38,11 @@
                                 >Каталог</a
                             >
                         </li>
-
-                        <li></li>
                         <li>
-                            <a class="menu__link" href="http://www.url.com"
-                                >Новости</a
-                            >
+                            <a class="menu__link" href="news.html">Новости</a>
                         </li>
                         <li>
-                            <a class="menu__link" href="http://www.url.com"
+                            <a class="menu__link" href="contact-info.html"
                                 >Контакты</a
                             >
                         </li>
@@ -50,7 +50,7 @@
                         <img
                             class="menu__phone_image"
                             src="images/telephone-white.png"
-                            alt=""
+                            alt="unable to load image"
                         />
                         <a href="" class="menu__phone">+375 (44) 4-979-228</a>
                         <li class="menu__counter">
@@ -62,6 +62,9 @@
                                     class="menu__shopping-card"
                                 />
                             </a>
+                        </li>
+                        <li class="menu__counter-mobile">
+                            <a href="cart.html"> Корзина </a>
                         </li>
                     </ul>
                 </div>
@@ -77,15 +80,14 @@
             </div>
 
             <h1>Каталог товаров</h1>
-            <ul class="items"></ul>
-            <!-- <footer>footer content</footer> -->
+            <div class="items"></div>
         </div>
         <footer>
             <div class="footer-info">
                 <img class="footer__image" src="images/location.png" alt="" />
-
                 <span class="footer__content">ул.Пушкина, дом Колотушкина</span>
             </div>
+            <img class="footer__logo" src="images/logo.png" alt="" />
             <div class="footer-info_right">
                 <img class="footer__image" src="images/email.png" alt="" />
                 <span> metalpumpkin@gmail.com</span>
@@ -96,5 +98,6 @@
         </footer>
 
         <script src="js/catalog.js"></script>
+        <script src="js/toggle-button.js"></script>
     </body>
 </html>

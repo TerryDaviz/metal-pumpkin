@@ -4,10 +4,9 @@
     margin-left: $mrgleft;
 }
 .search-form {
-    margin: 30px 70% 100px 0;
+    margin: 8% 70% 100px 0;
     position: relative;
     input {
-        height:100%;
         width: 100%;
         border:none;
         background-color: #d4d4d4;
@@ -23,9 +22,8 @@
          pointer-events:none;
          border-bottom:2px solid black;
 
-         background: url('/images/search.png') right no-repeat;
 
-         background-size: contain;
+}
          &:after{
              content: "";
              position: absolute;
@@ -42,7 +40,7 @@
         }
 
     }
-}
+// }
 
 .search-form input:focus  + .search-form__label .search-form__content, 
 .search-from input:valid + .search-form__label .search-form__content{
@@ -214,6 +212,7 @@ body h1{
     border: 0;
 
     }
+
     @media (max-width: 575px){
 .slick-slider {
     margin-left: 13vw;
@@ -237,15 +236,88 @@ body h1{
     }
 }
 .items {
+    column-gap:8vw;
     .items__product{
-max-width: 30vw;
+        max-width: 35vw;
+        min-width:200px;
     }
 }
 
 .items__product-name{
     font-size:14px;
 }
+.more{
+    margin: 10vh auto;
+}
+.content .swiper .swiper-slide {
+    position: relative;
+    &:after {
+        content:"sale";
+        position: absolute;
+        left: 14%;
+        top: 0;
+        background-color: red;
+        width: 40px;
+        height: 30px;
+    }
+ 
+    }
+    .slick-next {
+        left:75%
+    }
 
+}
+@media (max-width: 360px){
+
+    .items{
+        .items__wrapper{
+            width: 280px;
+    .items__product{
+        max-width: 260px ;
+    } 
+    }
+    }
+
+
+.content .swiper .swiper-slide {
+    position: relative;
+    width: 200px;
+    &:after {
+        content:"sale";
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-color: red;
+        width: 40px;
+        height: 30px;
+    }
+ 
+    }
+
+.swiper-slide {
+    img {
+        margin-left: 0vw;
+        max-width: 300px;
+    }
+    .swiper-slide .slick-slide .slick-current .slick-active{
+        width: 300px;
+    }
+
+}
+
+.slick-slider {
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+.slick-next{
+    left: 90%;
+}
+.slick-prev{
+    left: -4%;
+}
+.swiper .slick-initialized .slick-slider{
+    margin-left:-5vw;
+}
 }
 
 

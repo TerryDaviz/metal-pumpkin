@@ -16,14 +16,18 @@ body {
         height: 40px;
         margin: 30px 0 15px 0;
         outline: none;
+        border:none;
+        border-bottom: 1px solid #a4a4a4;
+        padding:2%;
     }
 
     p{
         display: block;
     }
 
+    .select-wrapper{
+        margin:10%  0 0 2%;
     .form__select {
-            width: 7vw;
             border-radius:0;
             border:none;
             background-color: #d4d4d4;
@@ -35,6 +39,7 @@ body {
             background-color: #fff;
         }
 
+        }
     }
     #submit {
         display: block;
@@ -53,4 +58,12 @@ body {
 
 }
 
+@media (max-width:480px ){
+.form-wrapper{
+    width:80vw;
+    label{
+        font-size: 14px;
+    }
+    }
+}
 

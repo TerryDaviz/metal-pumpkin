@@ -115,15 +115,17 @@ ul li {
   margin-bottom: -5px;
   display: inline;
   max-width: 30px;
-  max-height: 60px;
+  height: 25px;
+}
+
+.menu__counter-mobile {
+  display: none;
 }
 
 footer {
   position: relative;
   height: 118.8px;
   background-color: #2c2b2b !important;
-  background: url("/images/logo.png") center no-repeat;
-  background-size: 30% 130%;
 }
 footer .footer-info {
   position: absolute;
@@ -131,8 +133,14 @@ footer .footer-info {
   left: 5%;
 }
 footer .footer-info .footer__image {
-  max-width: 2%;
+  max-width: 4%;
   max-height: 2%;
+}
+footer .footer__logo {
+  position: absolute;
+  left: 44%;
+  max-width: 200px;
+  max-height: 100px;
 }
 footer .footer-info_right {
   position: absolute;
@@ -150,10 +158,19 @@ footer .footer-info_bottom {
 }
 
 @media (max-width: 768px) {
+  .navbar .container .menu__counter-mobile {
+    display: inline;
+  }
   .navbar .container .navbar__toggle-button {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+  .navbar .container .hidden nabvbar__toggle-button {
+    display: none;
+  }
+  .navbar .container .navbar__close {
+    display: none;
   }
 
   .navbar-wrap {
@@ -165,6 +182,7 @@ footer .footer-info_bottom {
   }
   .active .navbar-wrap {
     display: block;
+    margin: 0 auto;
   }
   .active .navbar-wrap .menu {
     display: block;
@@ -175,35 +193,53 @@ footer .footer-info_bottom {
   .active .navbar-wrap .menu .menu__counter {
     display: none;
   }
+  .active .navbar-wrap .menu .menu__counter-mobile {
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    padding: 15px;
+    opacity: 0.9;
+  }
+  .active .navbar-wrap .menu .menu__counter-mobile:hover {
+    opacity: 1;
+  }
   .active .navbar-wrap .menu .menu__phone_image {
     display: none;
   }
   .active .navbar-wrap .menu .menu__link {
     display: block;
+    text-align: center;
+    border-top: 1px solid #c4c4c4;
+    border-bottom: 1px solid #c4c4c4;
+    border-radius: 3px;
   }
 
+  footer .footer__logo {
+    left: 40%;
+  }
   footer .footer-info_right {
     position: relative;
     display: block;
     top: 80%;
-    left: 30%;
+    left: 35%;
+    font-size: 14px;
+    max-height: 7vh;
   }
   footer .footer-info_right .footer__image {
-    max-width: 2vw;
-    max-height: 10%;
+    max-width: 3vw;
+    max-height: 8%;
   }
   footer .footer-info_bottom {
     display: none;
-    top: 75%;
-    left: 32%;
   }
   footer .footer-info {
-    top: 65%;
-    left: 30%;
     display: block;
+    top: 60%;
+    left: 35%;
+    font-size: 14px;
   }
 }
-@media (max-width: 575px) {
+@media (max-width: 480px) {
   .navbar .container .navbar__toggle-button {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -233,7 +269,20 @@ footer .footer-info_bottom {
     display: none;
   }
   .active .navbar-wrap .menu .menu__link {
+    text-align: center;
     display: block;
+  }
+}
+@media (max-width: 480px) and (max-width: 360px) {
+  footer .footer-info {
+    left: 20%;
+  }
+  footer .footer__logo {
+    left: 30%;
+  }
+  footer .footer-info_right {
+    left: 20%;
+    top: 75%;
   }
 }
 .shop-body {
@@ -241,11 +290,10 @@ footer .footer-info_bottom {
 }
 
 .search-form {
-  margin: 30px 70% 100px 0;
+  margin: 8% 70% 100px 0;
   position: relative;
 }
 .search-form input {
-  height: 100%;
   width: 100%;
   border: none;
   background-color: #d4d4d4;
@@ -260,16 +308,14 @@ footer .footer-info_bottom {
   height: 100%;
   pointer-events: none;
   border-bottom: 2px solid black;
-  background: url("/images/search.png") right no-repeat;
-  background-size: contain;
 }
-.search-form .search-form__label:after {
+.search-form:after {
   content: "";
   position: absolute;
   width: 100%;
   height: 100%;
 }
-.search-form .search-form__label .search-form__content {
+.search-form .search-form__content {
   position: absolute;
   bottom: 5px;
   left: 0px;
@@ -462,11 +508,85 @@ body h1 {
     max-width: 300px;
   }
 
+  .items {
+    -webkit-column-gap: 8vw;
+       -moz-column-gap: 8vw;
+            column-gap: 8vw;
+  }
   .items .items__product {
-    max-width: 30vw;
+    max-width: 35vw;
+    min-width: 200px;
   }
 
   .items__product-name {
     font-size: 14px;
+  }
+
+  .more {
+    margin: 10vh auto;
+  }
+
+  .content .swiper .swiper-slide {
+    position: relative;
+  }
+  .content .swiper .swiper-slide:after {
+    content: "sale";
+    position: absolute;
+    left: 14%;
+    top: 0;
+    background-color: red;
+    width: 40px;
+    height: 30px;
+  }
+
+  .slick-next {
+    left: 75%;
+  }
+}
+@media (max-width: 360px) {
+  .items .items__wrapper {
+    width: 280px;
+  }
+  .items .items__wrapper .items__product {
+    max-width: 260px;
+  }
+
+  .content .swiper .swiper-slide {
+    position: relative;
+    width: 200px;
+  }
+  .content .swiper .swiper-slide:after {
+    content: "sale";
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: red;
+    width: 40px;
+    height: 30px;
+  }
+
+  .swiper-slide img {
+    margin-left: 0vw;
+    max-width: 300px;
+  }
+  .swiper-slide .swiper-slide .slick-slide .slick-current .slick-active {
+    width: 300px;
+  }
+
+  .slick-slider {
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
+
+  .slick-next {
+    left: 90%;
+  }
+
+  .slick-prev {
+    left: -4%;
+  }
+
+  .swiper .slick-initialized .slick-slider {
+    margin-left: -5vw;
   }
 }

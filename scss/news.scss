@@ -5,12 +5,8 @@ h1{
 }
 .news-wrapper{
     margin-left:11.5vw;
-    // margin:0 auto;
-    padding: 5vh;
+    margin-bottom: 100px;
     display:flex; 
-    // justify-content: center;
-    // align-items: center;
-
 }
 .news-wrapper {
     a {
@@ -66,4 +62,14 @@ time{
     }
 }
 
+}
+
+@media(max-width:768px){
+    .news-wrapper{
+        margin:0;
+    .news__content-wrapper{
+        margin:0 auto;
+
+        }
+}
 }

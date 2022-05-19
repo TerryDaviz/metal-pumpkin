@@ -1,17 +1,19 @@
-
-
 var carts = []
-let wrapper = document.querySelector('.items');
-(async () => {
+let wrapper = document.querySelector('.items')
+;(async () => {
     var items = await (await fetch('items.json')).json()
     checkCart()
     showItems()
     function showItems() {
         for (key in carts) {
-            wrapper.innerHTML += `<div class="items__product product">
- <img class="product__image" src="${items[key].image}" alt="no image found"></img>
+            wrapper.innerHTML += `<div class="items__product ">
+ <img class="product__image" src="${
+     items[key].image
+ }" alt="no image found"></img>
  <p class="product__amount" data-id="${carts[key]}">количесво: ${carts[key]}<p>
- <button class="product__delete" data-id="${carts[key] * items[key].cost}"> &times;</button>
+ <button class="product__delete" data-id="${
+     carts[key] * items[key].cost
+ }"> &times;</button>
  <p class="product__price" >цена: ${carts[key] * items[key].cost}</p>
  <button class="product__purchase" data-id="${key}" onclick = "window.location.href ='purchase.html'"> купить</button>
                 </div>`

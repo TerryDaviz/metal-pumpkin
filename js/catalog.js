@@ -3,11 +3,11 @@ let wrapper = document.querySelector('.items')
     let items = await (await fetch('items.json')).json()
     for (key in items) {
         wrapper.innerHTML += `
-        <li class="card" >
+        <div class="card" >
         <img class="card__product" src="${items[key].image}" alt="unable to load the image"></img>
             <p class="card__caption">${items[key].name}</p> 
             <p class="card__price">${items[key].cost} руб.</p>
-            <button  class="card__button" data-action="add" data-articul="${key}" data-price="${items[key].cost}">В корзину</button></li>`
+            <button  class="card__button" data-action="add" data-articul="${key}" data-price="${items[key].cost}">В корзину</button></div>`
     }
 })()
 

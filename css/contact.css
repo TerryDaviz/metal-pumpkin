@@ -115,15 +115,17 @@ ul li {
   margin-bottom: -5px;
   display: inline;
   max-width: 30px;
-  max-height: 60px;
+  height: 25px;
+}
+
+.menu__counter-mobile {
+  display: none;
 }
 
 footer {
   position: relative;
   height: 118.8px;
   background-color: #2c2b2b !important;
-  background: url("/images/logo.png") center no-repeat;
-  background-size: 30% 130%;
 }
 footer .footer-info {
   position: absolute;
@@ -131,8 +133,14 @@ footer .footer-info {
   left: 5%;
 }
 footer .footer-info .footer__image {
-  max-width: 2%;
+  max-width: 4%;
   max-height: 2%;
+}
+footer .footer__logo {
+  position: absolute;
+  left: 44%;
+  max-width: 200px;
+  max-height: 100px;
 }
 footer .footer-info_right {
   position: absolute;
@@ -150,10 +158,19 @@ footer .footer-info_bottom {
 }
 
 @media (max-width: 768px) {
+  .navbar .container .menu__counter-mobile {
+    display: inline;
+  }
   .navbar .container .navbar__toggle-button {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+  .navbar .container .hidden nabvbar__toggle-button {
+    display: none;
+  }
+  .navbar .container .navbar__close {
+    display: none;
   }
 
   .navbar-wrap {
@@ -165,6 +182,7 @@ footer .footer-info_bottom {
   }
   .active .navbar-wrap {
     display: block;
+    margin: 0 auto;
   }
   .active .navbar-wrap .menu {
     display: block;
@@ -175,35 +193,53 @@ footer .footer-info_bottom {
   .active .navbar-wrap .menu .menu__counter {
     display: none;
   }
+  .active .navbar-wrap .menu .menu__counter-mobile {
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    padding: 15px;
+    opacity: 0.9;
+  }
+  .active .navbar-wrap .menu .menu__counter-mobile:hover {
+    opacity: 1;
+  }
   .active .navbar-wrap .menu .menu__phone_image {
     display: none;
   }
   .active .navbar-wrap .menu .menu__link {
     display: block;
+    text-align: center;
+    border-top: 1px solid #c4c4c4;
+    border-bottom: 1px solid #c4c4c4;
+    border-radius: 3px;
   }
 
+  footer .footer__logo {
+    left: 40%;
+  }
   footer .footer-info_right {
     position: relative;
     display: block;
     top: 80%;
-    left: 30%;
+    left: 35%;
+    font-size: 14px;
+    max-height: 7vh;
   }
   footer .footer-info_right .footer__image {
-    max-width: 2vw;
-    max-height: 10%;
+    max-width: 3vw;
+    max-height: 8%;
   }
   footer .footer-info_bottom {
     display: none;
-    top: 75%;
-    left: 32%;
   }
   footer .footer-info {
-    top: 65%;
-    left: 30%;
     display: block;
+    top: 60%;
+    left: 35%;
+    font-size: 14px;
   }
 }
-@media (max-width: 575px) {
+@media (max-width: 480px) {
   .navbar .container .navbar__toggle-button {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -233,18 +269,35 @@ footer .footer-info_bottom {
     display: none;
   }
   .active .navbar-wrap .menu .menu__link {
+    text-align: center;
     display: block;
   }
 }
+@media (max-width: 480px) and (max-width: 360px) {
+  footer .footer-info {
+    left: 20%;
+  }
+  footer .footer__logo {
+    left: 30%;
+  }
+  footer .footer-info_right {
+    left: 20%;
+    top: 75%;
+  }
+}
 .info-body {
-  margin-top: 5vh;
+  margin-top: 5vw;
   margin-left: 13vw;
+  margin-bottom: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-column-gap: 3vw;
      -moz-column-gap: 3vw;
           column-gap: 3vw;
+  row-gap: 30px;
 }
 .info-body__form {
   max-width: 530px;
@@ -262,11 +315,15 @@ footer .footer-info_bottom {
   border: none;
   margin: 20px 0;
   border-bottom: 1px solid black;
+  padding-left: 2%;
 }
 .info-body__form textarea {
   border: none;
   margin-top: 20px;
+  font-size: 16px;
   width: 500px;
+  padding: 0 2%;
+  outline: none;
 }
 .info-body__form .input__label {
   position: absolute;
@@ -274,6 +331,35 @@ footer .footer-info_bottom {
   border-bottom: 2px solid black;
   background-color: #fff;
 }
+.info-body__contacts {
+  margin-left: 5vw;
+}
+.info-body__contacts .contact {
+  margin: 1vw auto;
+}
+.info-body__contacts span {
+  font-weight: 600;
+}
 .info-body h1, .info-body h3, .info-body input, .info-body textarea, .info-body span, .info-body a, .info-body label {
   color: black;
+}
+
+@media (max-width: 480px) {
+  .info-body__form {
+    max-width: 330px;
+    background-color: #fff;
+    border-radius: 5px;
+  }
+  .info-body__form textarea {
+    max-width: 280px;
+    padding-left: 2%;
+  }
+}
+@media (max-width: 480px) {
+  .info-body__form {
+    width: 262px;
+  }
+  .info-body__form textarea {
+    width: 220px;
+  }
 }
